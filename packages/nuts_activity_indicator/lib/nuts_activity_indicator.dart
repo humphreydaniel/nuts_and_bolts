@@ -67,24 +67,16 @@ class NutsActivityIndicator extends StatefulWidget {
   /// TODO: what is this width value really?
   final double relativeWidth;
 
-  /// Radius ratio tells where the rectangles start.
+  /// This tells the relative length of the ticks from the inside to the absolute center of
+  /// the indicator.
   ///
-  /// Defaults to 0.5, meaning that the "ticks" will go from
-  /// (0.5 * radius, radius).
-  ///
-  /// I'm sorry I can't explain it any better. Check the example app...
-  ///
-  /// If you know how to explain it better, open a PR!
+  /// Defaults to 0.5.
   final double startRatio;
 
-  /// Radius ratio tells where the rectangles end.
+  /// This tells the relative length of the ticks from the outside to the absolute center of
+  /// the indicator.
   ///
-  /// Defaults to 1, meaning that the "ticks" will go from
-  /// (0.5 * radius, 1 * radius).
-  ///
-  /// I'm sorry I can't explain it any better. Check the example app...
-  ///
-  /// If you know how to explain it better, open a PR!
+  /// Defaults to 0.5.
   final double endRatio;
 
   /// Creates a highly customizable activity indicator.
